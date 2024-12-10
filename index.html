@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<tittle>Mamun Animation</tittle>
+<style>
+    body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    }
+    
+    button{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 4px solid white;
+    font-size: 32px;
+    color: white;
+    font-weight: 1px;
+    letter-spacing: 3px;
+    border-radius: 40px;
+    cursor: pointer;
+    }
+
+    button:before, button.after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: 4px solid white;
+    border-radius: 40px;
+    bottom: -4px;
+    left: -4px;
+    transition: 1s;
+    }
+     
+    button:hover:before{
+        transform: rotate(40deg);
+    }
+    </style>
+    </head>
+    </body>
+    <button>Button</button>
+    </body>
+    </html>
